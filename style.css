@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow: hidden;
+}
+
+.timer {
+  background: #333;
+  display: flex;
+  flex-direction: column;
+  margin: 260px auto ;
+  border-radius: 220px;
+  width: 480px;
+}
+.time_display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.time_display span {
+  width: 100px;
+  background: #fff;
+  margin: 10px 20px;
+  text-align: center;
+  font-size: 3rem;
+  border-radius: 20px;
+}
+.button_display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button_display button {
+  margin: 10px 20px;
+  width: 80px;
+  height: 20px;
+  border-radius: 20px;
+  border: none;
+  background: #fff
+}
+.button_display button:hover {
+  transition: all .4s;
+  transform: scale(1.1);
+  background: #333;
+  border: 1px solid #fff;
+  color: #fff
+}

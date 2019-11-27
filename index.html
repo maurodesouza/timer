@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Timer</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section class="timer">
+
+    <div class="time_display">
+
+      <span data-hours> 00 </span>
+      <span data-minutes> 00 </span>
+      <span data-secunds> 00 </span>
+
+    </div>
+
+    <div class="button_display">
+
+      <button data-pause> Pause </button>
+      <button data-start> Start </button>
+      <button data-reset> Reset </button>
+
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+  <script>
+
+    const hoursDisplay = document.querySelector('[data-hours]');
+    const minutesDisplay = document.querySelector('[data-minutes]');
+    const secundsDisplay = document.querySelector('[data-secunds]');
+    const btnStart = document.querySelector('[data-start]');
+    const btnPause = document.querySelector('[data-pause]');
+    const btnReset = document.querySelector('[data-reset]');
+
+    const timer = new Timer(
+      btnStart,
+      btnPause,
+      btnReset,
+      hoursDisplay,
+      minutesDisplay,
+      secundsDisplay
+    ).init();
+  </script>
+
+</body>
+
+</html>
