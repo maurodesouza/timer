@@ -18,9 +18,9 @@ class Timer {
       secundsDisplay
     };
     this.time = {
-      hours: 23,
-      minutes: 59,
-      secunds: 55,
+      hours: 0,
+      minutes: 0,
+      secunds: 0,
     };
     this.timerStarted = false;
     this.timer;
